@@ -1,0 +1,365 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.css);
+
+@import 'https://fonts.googleapis.com/css?family=Abel|Bungee+Hairline|Cinzel|Poiret+One|Quicksand|Raleway';
+/*
+font-family: 'Poiret One', cursive;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Cinzel', serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Abel', sans-serif;
+font-family: 'Bungee Hairline', cursive;
+*/
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #F4F4F4;
+}
+/* Start: menu*/
+header {
+  background: #151515;
+  width: 100%;
+  left: 0;
+}
+
+#menuIcon {
+    width: 160px;
+    height: 80px;
+}
+nav {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.logo-box {
+  float: left;
+  margin-left: 10px;
+}
+
+.logo {
+  margin: 0;
+  height: 70px;
+  text-align: center;
+}
+
+.ul-0 {
+  margin: 0;
+  margin-right: 25px;
+  padding-left: 0;
+  list-style: none;
+  float: right;
+  height: 70px;
+  line-height: 70px;
+  text-align:center;
+}
+
+.a-logo {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  
+}
+
+.a-0 {
+  color: white;
+  text-transform: uppercase;
+  font-size:125%;
+  padding: 15px;
+}
+
+.a-0:hover {
+    color: #868686;
+    text-decoration: none;
+}
+
+.li-0 {
+  display: inline-block;
+  margin-left: 25px;
+  transition: .5s linear;
+}
+
+.a-0:hover:after{
+  width: 100%;
+}
+@media screen and (max-width:574px) {
+  .logo-box {
+    float: none;
+    margin: 0 auto;
+  }
+  .ul-0 {
+    float: none;
+    margin: 0 25px;
+    }
+ .li-0:first-of-type {margin-left:0}
+}
+
+@media screen and (max-width:493px) {
+nav {
+  overflow: visible
+}
+.ul-0 {
+  height: auto;
+  padding-top: 30px;
+  line-height: 30px;
+}
+.li-0 {
+  display: block;
+  margin: 0;
+}
+}
+
+/* end of menu -> textBox*/
+.textBox {
+  height: 350px;
+  background-color: #151515;
+}
+
+ .textBox p {
+  letter-spacing: 4px;
+  color: white;
+  padding: 80px 40px 0 40px;
+  font-size: 320%;
+  max-width: 700px;
+  line-height: 50px;
+  font-weight: 100;
+}
+/* end of textBox-> heroBox*/
+
+#container-1 { 
+  height: 1100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+  width: 100%;
+  background: url(https://res.cloudinary.com/dt4qeehms/image/upload/q_100/v1470079590/Portfolio/sketch1470013065008_wj0znd.png) no-repeat center center; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+/* end of heroBox -> skillBox*/
+
+i {
+  font-size: 800%;
+  color: black;
+  
+}
+
+#container-2 { 
+  background: #F4F4F4;
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+#container-2 h3 {
+  letter-spacing: 4px;
+  padding: 50px 40px 50px 40px;
+}
+
+.row-fluid {
+    width: 100%;
+}
+
+.skills-block {
+    text-align: center;
+
+}
+
+.iconSkill {
+    margin-bottom: 60px;
+}
+
+/* end of skillBox -> workBox*/
+#container-3 {
+  background-color:#151515;
+
+}
+
+#container-3 h3{
+  color:#F4F4F4;
+padding: 50px 40px 50px 40px;
+  letter-spacing: 4px;
+}
+
+#grid {
+    max-width:100%;
+    margin:0 auto;
+    padding:0;
+    font-size:0;
+    list-style:none;
+    background-color:#151515;
+  
+}
+#grid li {
+    display: inline-block;
+    width:25%;
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+        
+.gridCell {
+  border:3px solid #151515;
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+.gridImg {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 0.8s;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+  
+    
+}
+
+#grid li:hover .gridImg {
+    transform:scale(1.05);
+      -webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+  
+}
+        
+/* If have the overlay layer */
+.gridOverlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #F4F4F4 
+    background-size:50px 50px;
+    opacity:0;
+    transition:all 0.6s;
+  
+}
+#grid li:hover .gridOverlay {
+    opacity:0.2;
+  
+}
+
+.gridText {
+    display:block;
+    box-sizing:border-box;
+    position:absolute;
+    margin: auto auto auto -4.1em;
+    left: 50%;
+    padding: 15px;
+    text-align:center;
+    background-color: #151515;
+  border-radius: .2em;
+  
+    font-size:18px;
+    top:50%;
+    color:white;
+    opacity:0;
+    transform:translateY(30px);
+    transition:all .4s;
+}
+#grid li:hover .gridText {
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+@media (max-width: 9000px) {
+    #grid li {
+        width:33.33%;
+    }
+}
+
+@media (max-width: 700px) {
+    #grid li {
+        width:50%;
+    }
+}
+
+@media (max-width: 550px) {
+    #grid li {
+        width:100%;
+    }
+}
+
+/* end of workBox -> aboutBox*/
+
+#container-4 {
+  width: 100%;  
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto;
+  padding-bottom: 100px;
+  background: #151515;
+  color: white;
+  
+}
+
+.about {
+  display: block;
+  letter-spacing: 2px;
+  
+}
+
+.contact {
+  max-width: 75%;
+  display: block;
+  letter-spacing: 2px;
+}
+
+.follow {
+  display: block;
+  letter-spacing: 2px;
+}
+
+.about h3, .contact h3, .follow h3 {
+  margin: 100px 0 25px 0;
+}
+
+.social-icon {
+
+  font-size: 200%;
+  padding: 0 20px 0 0;
+}
+
+.social-icon i {
+  color: white;
+}
+
+.buttonSend {
+    background-color: #F4F4F4;
+    border: none;
+    border-radius: .2em;
+    color: black;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  font-weight: bold;
+}
+
+.buttonSend:hover {
+    background-color: #919191;
+  color: #D7D7D7;
+}
+/*end of aboutBox --> footer*/
+
+footer { 
+    padding: 30px 80px 20px 0;
+    display: block;
+    background:#151515; 
+    color: white;
+    font-size: 85%;
+    text-align: end;
+}
+
+/*end of footer*/
