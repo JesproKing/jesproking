@@ -1003,11 +1003,6 @@ button {
         grid-template-columns: 1fr;
 
         min-height: auto;
-
-        padding-top: 150px;
-        padding-bottom: 100px;
-
-        gap: 55px;
     }
 
     .hero-terminal {
@@ -1077,7 +1072,7 @@ button {
 
         padding: 8px;
 
-        background: rgba(13, 15, 18, 0.98);
+        background: rgba(120, 217, 246, 0.98);
 
         border: 1px solid var(--border);
 
@@ -1095,13 +1090,10 @@ button {
     }
 
     .nav-links a:hover {
-        background: rgba(255, 255, 255, 0.04);
+        /* background: rgba(255, 255, 255, 0.04); */
+        color: whitesmoke;
 
         transform: none;
-    }
-
-    .hero {
-        padding-top: 125px;
     }
 
     .hero h1 {
