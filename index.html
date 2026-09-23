@@ -1,98 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JesproKing — Game Developer</title>
+    <meta
+        name="description"
+        content="JesproKing — indie game developer creating games with Rust, Bevy and more."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+  >
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
-  <header>
-      <nav>
-    <div class="logo-box">
-      <h1 class="logo">
-        <a class="a-logo" href="">
-          <img id="menuIcon" src="images/Axew_pfp.png">
-        </a>
-      </h1>
-    </div>
-    <ul class="ul-0">
-      <li class="li-0"><a class="a-0" href="#container-3">Projects</a></li>
-      <li class="li-0"><a class="a-0" href="#container-4">About Me</a></li>
-   </ul>
-  </nav>
+
+    <div class="background-grid"></div>
+
+    <header class="site-header">
+        <nav class="nav container">
+            <a href="#top" class="logo">
+                <span class="logo-mark">&gt;_</span>
+                <span>JesproKing</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links">
+                <a href="#games">Projects</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a
+                    href="https://jesproking.itch.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    itch.io ↗
+                </a>
+            </div>
+        </nav>
     </header>
-  
-  <!-- <div class="textBox">
-    <div>
-      <p>Beauty, Madness And Everything Else.</p>
-    </div>
-  </div> -->
-  
-  <div class="container-fluid"></div>
 
-  <div id="container-3">
-    <h3>MY WORK: </h3>
-  <ul id="grid">
-    <li>
-        <a class="gridCell" href="#">
-            <img class="gridImg" src="https://res.cloudinary.com/dt4qeehms/image/upload/q_100/v1470150117/wp4_mmijin.png">
-            <span class="gridOverlay"></span>
-            <span class="gridText">View Project</span>
-        </a>
-    </li>
-    <li>
-        <a class="gridCell" href="#">
-            <img class="gridImg" src="https://res.cloudinary.com/dt4qeehms/image/upload/q_100/v1470090147/Portfolio/wp1_eal3pl.png">
-            <span class="gridOverlay"></span>
-            <span class="gridText">View Project</span>
-        </a>
-    </li>
-    <li>
-        <a class="gridCell" href="#">
-            <img class="gridImg" src="https://res.cloudinary.com/dt4qeehms/image/upload/q_100/v1470090146/Portfolio/wp2_y2rkr8.png">
-            <span class="gridOverlay"></span>
-            <span class="gridText">View Project</span>
-        </a>
-    </li>
-    <li>
-        <a class="gridCell" href="#">
-            <img class="gridImg" src="https://res.cloudinary.com/dt4qeehms/image/upload/q_100/v1470091955/photos_nqxdnz.png">
-            <span class="gridOverlay"></span>
-            <span class="gridText">View Project</span>
-        </a>
-    </li>
-    <li>
-        <a class="gridCell" href="#">
-            <img class="gridImg" src="https://res.cloudinary.com/dt4qeehms/image/upload/q_100/v1470079575/Portfolio/drawings_f1vejf.png">
-            <span class="gridOverlay"></span>
-            <span class="gridText">View Project</span>
-        </a>
-    </li>
-    <li>
-        <a class="gridCell" href="#">
-            <img class="gridImg" src="https://res.cloudinary.com/dt4qeehms/image/upload/q_100/v1470090135/Portfolio/fcc_uwvdrb.png">
-            <span class="gridOverlay"></span>
-            <span class="gridText">View Project</span>
-        </a>
-    </li>
+    <main id="top">
+        <section class="hero container">
 
-</ul>
-  </div>
-  
-  <div id="container-4" class="row">
-    <section class="about col-lg-4 col-sm-4 col-xs-12">
-    </br>
-        <h3>About Me</h3>
-        <p>My name is Jesper Boersma. I am a Game Developer and IT Student from the Netherlands. I am currently in my last year and looking for a place to do my graduation internship.</p>
-        <p>I like making games, because it allows me to create many different creative things, like interesting systems, art, shaders, music, etc. I love creating and sharing my passion with others, and get a lot of satisfaction from seeing people enjoying my games. </p>
-      </section>
-    <section class="follow col-lg-4 col-sm-4 col-xs-12">
-      
-      <h3>Contact</h3>
-      <a href="" class="social-icon"> <i class="fa fa-github"></i></a>
-      <a href="" class="social-icon"> <i class="fa fa-gmail"></i></a>
-      </section>
-    
-</div>
-  
-  <footer><p>© 2026 JesproKing • All Rights Reserved</p></footer>
-  
+            <div class="hero-content">
+                <h1>
+                    I'm <span>JesproKing</span>.
+                    <br>
+                    I make games.
+                </h1>
+
+                <p class="hero-description">
+                    Independent game developer experimenting with gameplay,
+                    systems, weird ideas and interactive worlds.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#games" class="button button-primary">
+                        View my projects
+                        <span>↓</span>
+                    </a>
+
+                    <a
+                        href="https://jesproking.itch.io/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button button-secondary"
+                    >
+                        itch.io ↗
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-terminal">
+                <img
+                    src="images/Axew_pfp.png"
+                    alt="Axew Art"
+                    loading="lazy"
+                    class="profile"
+                >
+            </div>
+
+        </section>
+
+        <section id="games" class="section container">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Projects</h2>
+                </div>
+            </div>
+
+
+            <div class="games-grid">
+                <article class="game-card game-card-featured">
+
+                    <a
+                        class="game-image-link"
+                    >
+                        <div class="game-image">
+                            <img
+                                src="images/tot_icon.png"
+                                alt="Tower of Terma"
+                                loading="lazy"
+                            >
+
+                            <div class="image-overlay">
+                                <span>Demo Coming Soon! ↗</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="game-info">
+
+                        <div class="game-meta">
+                            <span class="game-type">Story Puzzle Game</span>
+                        </div>
+
+                        <h3>Tower of Terma</h3>
+
+                        <p>
+                            Looks like it's finally your turn to climb the tower! You do remember why, right?
+                            You don't? Well, start climbing and discover the mysteries of Terma.
+                        </p>
+
+                        <div class="tags">
+                            <span>Rust</span>
+                            <span>Bevy</span>
+                            <span>Sokoban</span>
+                            <span>Story</span>
+                        </div>
+
+                        <a
+                            class="game-link"
+                        >
+                            Coming Soon! 
+                            <!-- <span>→</span> -->
+                        </a>
+
+                    </div>
+                </article>
+
+                <article class="game-card game-card-featured-right">
+                  <div class="game-info">
+
+                        <div class="game-meta">
+                            <span class="game-type">Factory Builder Roguelike</span>
+                        </div>
+
+                        <h3>Supply Chain</h3>
+
+                        <p>
+                            Build factory chains, score points, buy upgrades,
+                            and optimize your way to victory.
+                        </p>
+
+                        <div class="tags">
+                            <span>Rust</span>
+                            <span>Bevy</span>
+                            <span>Strategy</span>
+                            <span>Roguelike</span>
+                        </div>
+
+                        <a
+                            href="https://jesproking.itch.io/supply-chain"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="game-link"
+                        >
+                            View game <span>→</span>
+                        </a>
+
+                    </div>
+                    <a
+                        href="https://jesproking.itch.io/supply-chain"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="game-image-link"
+                    >
+                        <div class="game-image">
+                            <img
+                                src="https://img.itch.zone/aW1nLzIxNTQ4NTY2LnBuZw%3D%3D/original/j7uuct.png"
+                                alt="Supply Chain gameplay"
+                                loading="lazy"
+                            >
+
+                            <div class="image-overlay">
+                                <span>PLAY ON ITCH.IO ↗</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    
+                </article>
+
+                <article class="game-card game-card-featured">
+
+                    <a
+                        class="game-image-link"
+                    >
+                        <div class="game-image">
+                                  
+                        <iframe min-height="350px" height="350px" src="https://www.youtube.com/embed/du7U6rIHEcY">
+                        </iframe>
+
+                            <div class="image-overlay">
+                                <span>Try now at Enversed in Eindhoven! ↗</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="game-info">
+
+                        <div class="game-meta">
+                            <span class="game-type">Story Puzzle Game</span>
+                        </div>
+
+                        <h3>Frightless Birds</h3>
+
+                        <p>
+                            A Flightless Bird wants to take flying lessons? Well good luck, there's only one spot left and you'll have to fight for it!
+                        </p>
+                        <p>
+                          Play around a table with up to 3 others in exciting minigames. May the best bird win!
+                        </p>
+
+                        <div class="tags">
+                            <span>C#</span>
+                            <span>Unity</span>
+                            <span>Arcade</span>
+                            <span>Party Game</span>
+                        </div>
+
+                        <a
+                            class="game-link"
+                        >
+                            Play it now at Enversed Cafe!
+                            <span>→</span>
+                        </a>
+
+                    </div>
+                </article>
+
+                <article class="game-card">
+
+                    <a
+                        href="https://jesproking.itch.io/opportunity"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="game-image-link"
+                    >
+                        <div class="game-image rover-image">
+
+                            <img
+                                src="https://img.itch.zone/aW1hZ2UvMzU0NDMxMy8yMTEwOTUzOC5wbmc=/794x1000/qv8NHz.png"
+                                alt="My battery is low and it's getting dark gameplay"
+                                loading="lazy"
+                            >
+
+                            <div class="image-overlay">
+                                <span>PLAY ON ITCH.IO ↗</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="game-info">
+
+                        <div class="game-meta">
+                            <span class="game-type">Story Adventure</span>
+                        </div>
+
+                        <h3>
+                            My battery is low
+                            <br>
+                            and it's getting dark
+                        </h3>
+
+                        <p>
+                            A little moon rover has to complete its tasks
+                            before the battery runs out.
+                        </p>
+
+                        <div class="tags">
+                            <span>Retro</span>
+                            <span>Black &amp; White</span>
+                            <span>Adventure</span>
+                            <span>No AI</span>
+                        </div>
+
+                        <a
+                            href="https://jesproking.itch.io/opportunity"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="game-link"
+                        >
+                            View game <span>→</span>
+                        </a>
+
+                    </div>
+                </article>
+
+
+                <!-- SHADOW SNEAK -->
+                <article class="game-card">
+
+                    <a
+                        href="https://jesproking.itch.io/shadow-sneak"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="game-image-link"
+                    >
+                       <div class="game-image rover-image">
+
+                            <img
+                                src="https://img.itch.zone/aW1hZ2UvMzUyMTgxMS8yMDk4MTk0MC5wbmc=/794x1000/VzKVUQ.png"
+                                alt="My battery is low and it's getting dark gameplay"
+                                loading="lazy"
+                            >
+
+                            <div class="image-overlay">
+                                <span>PLAY ON ITCH.IO ↗</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="game-info">
+
+                        <div class="game-meta">
+                            <span class="game-type">Stealth</span>
+                        </div>
+
+                        <h3>Shadow Sneak</h3>
+
+                        <p>
+                            Sneak past the guards and hide in the shadows
+                            without getting caught.
+                        </p>
+
+                        <div class="tags">
+                            <span>Rust</span>
+                            <span>Bevy</span>
+                            <span>Stealth</span>
+                            <span>Game Jam</span>
+                        </div>
+
+                        <a
+                            href="https://jesproking.itch.io/shadow-sneak"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="game-link"
+                        >
+                            View game <span>→</span>
+                        </a>
+
+                    </div>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="about" class="section about-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <h2>About</h2>
+                    </div>
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+
+                        <p class="large-text">
+                            I like making games that experiment with
+                            mechanics, atmosphere, and systems.
+                        </p>
+
+                        <p>
+                            My name is Jesper Boersma. I am a Game Developer and IT Student from the Netherlands. I am currently in my last year and looking for a place to do my graduation internship.
+                        </p>
+
+                        <p>
+                            I like making games, because it allows me to create many different creative things, like interesting systems, art, shaders, music, etc. I love creating and sharing my passion with others, and get a lot of satisfaction from seeing people enjoying my games.
+                        </p>
+
+                        <p>
+                            My projects range from multiplayer party games and roguelikes to small experimental games.
+                        </p>
+
+                    </div>
+
+
+                    <div class="skills">
+
+                        <div class="skill-group">
+                            <h3>Tools &amp; Tech</h3>
+
+                            <div class="skill-list">
+                                <span>Rust</span>
+                                <span>Bevy</span>
+                                <span>Unity</span>
+                                <span>Godot</span>
+                                <span>Java</span>
+                                <span>C#</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Git</span>
+                            </div>
+                        </div>
+
+
+                        <div class="skill-group">
+                            <h3>Interested in</h3>
+
+                            <div class="skill-list">
+                                <span>Game Design</span>
+                                <span>Gameplay Programming</span>
+                                <span>Systems</span>
+                                <span>Prototyping</span>
+                                <span>Pixel Art</span>
+                                <span>Shaders</span>
+                                <span>Game Jams</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact" class="contact-section">
+
+            <div class="container contact-content">
+                <h2>
+                    Contact
+                </h2>
+                <p>If you want to reach out to me, please email me!</p>
+
+                <div>
+                  <a href="mailto:boersma.jesper@gmail.com" class="social-icon"> <i class="fa fa-envelope"></i></a>
+                  <a href="https://github.com/JesproKing" class="social-icon"> <i class="fa-brands fa-github"></i></a>
+                  <a href="https://www.youtube.com/@JesproKingGames" class="social-icon"> <i class="fa-brands fa-youtube"></i></a>
+                  <a href="https://jesproking.itch.io/" class="social-icon"> <i class="fa-brands fa-itch-io"></i></a>
+                </div>
+              </div>
+        </section>
+
+        <section id="closing" class="closing-section">
+            <div class="container closing-content">
+                <h2>
+                    Want to see what
+                    <span>I'm making?</span>
+                </h2>
+
+                <p>
+                    Check out my games and projects on itch.io.
+                </p>
+
+                <a
+                    href="https://jesproking.itch.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="button button-primary"
+                >
+                    Visit itch.io ↗
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="container footer-inner">
+
+            <span>
+                © <span id="year"></span> JesproKing
+            </span>
+
+            <span class="footer-status">
+                <i></i>
+                Building games
+            </span>
+
+            <a
+                href="https://jesproking.itch.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                itch.io ↗
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+</html>
