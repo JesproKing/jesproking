@@ -174,7 +174,7 @@ button {
 }
 
 .nav-links a:hover {
-    color: var(--light_blue);
+    color: whitesmoke;
     transform: translateY(-1px);
 }
 
